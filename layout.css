@@ -20,6 +20,12 @@ h2{
 	color: purple;
 }
 
+h3{
+	font-size: 20px;
+	font-weight: 400;
+	color: pink;
+}
+
 ul{
 	background-color: #ccccff;
 }
