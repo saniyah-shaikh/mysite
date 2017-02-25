@@ -28,22 +28,4 @@
 <div id="penguin gif">
 	<!-- <img src="https://media.giphy.com/media/H4uE6w9G1uK4M/giphy.gif" alt="penguin GIF"> -->
 </div>
-
-
-<?php
-$fp = fopen ("count.dat", 'r');
-$count = fread ($fp, 1024);
-fclose ($fp);
-
-echo $count;
-
-$count=$count+1;
-$fp = fopen ("count.dat", 'w');
-fwrite($fp, "$count\n");
-fclose ($fp);
-?>
-</body>
-
-
-
 </html>
