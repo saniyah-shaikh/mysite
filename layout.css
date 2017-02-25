@@ -32,13 +32,18 @@ h4 {
 }
 
 #my_pic {
-	margin-left: 40%;
+	margin: 0 auto;
 	padding: 1em;
 	filter: grayscale(100%);
 }
 
 #my_pic:hover {
 	filter: grayscale(0%);
+}
+
+#reg_pic {
+	margin: 0 auto;
+	padding: 1em;
 }
 
 .highlight {
