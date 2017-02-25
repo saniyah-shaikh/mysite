@@ -32,7 +32,7 @@ h4 {
 }
 
 #my_pic {
-	margin-left: 40%;
+	margin: auto;
 	padding: 1em;
 	filter: grayscale(100%);
 }
@@ -42,7 +42,7 @@ h4 {
 }
 
 #reg_pic {
-	margin-left: 40%;
+	margin: auto;
 	padding: 1em;
 }
 
