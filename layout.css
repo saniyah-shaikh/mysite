@@ -33,8 +33,6 @@ h4 {
 
 #my_pic {
 	margin: 0 auto;
-	display: block;
-	width: 50%;
 	padding: 1em;
 	filter: grayscale(100%);
 }
@@ -45,8 +43,6 @@ h4 {
 
 #reg_pic {
 	margin: 0 auto;
-	width: 50%;
-	display: block;
 	padding: 1em;
 }
 
