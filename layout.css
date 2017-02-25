@@ -77,8 +77,8 @@ textarea {
 }
 
 .resumeButton:hover {
-	color: #ffff00;
-	background: #000;
+	color: #3366cc;
+	background: #fff;
 	border: 1px solid #fff;
 	-moz-box-shadow:: 5px 5px 4px #adadad;
 	-webkit-box-shadow:: 5px 5px 4px #adadad;
