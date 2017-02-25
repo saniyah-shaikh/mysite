@@ -26,6 +26,11 @@ h3{
 	color: pink;
 }
 
+h4 {
+	dont_size: 18px;
+	font-weight: 300;
+}
+
 #my_pic {
 	margin-left: 40%;
 	padding: 1em;
