@@ -41,6 +41,11 @@ h4 {
 	filter: grayscale(0%);
 }
 
+#reg_pic {
+	margin-left: 40%;
+	padding: 1em;
+}
+
 .highlight {
 	background-color: #ffcc99;
 }
