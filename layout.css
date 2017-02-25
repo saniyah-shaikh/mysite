@@ -78,7 +78,7 @@ textarea {
 
 .Button:hover {
 	color: #3366cc;
-	background: #fff;
+	background: #000;
 	border: 1px solid #fff;
 	-moz-box-shadow:: 5px 5px 4px #adadad;
 	-webkit-box-shadow:: 5px 5px 4px #adadad;
@@ -102,7 +102,7 @@ textarea {
 
 .smallButton:hover {
 	color: #3366cc;
-	background: #fff;
+	background: #000;
 	border: 1px solid #fff;
 	-moz-box-shadow:: 5px 5px 4px #adadad;
 	-webkit-box-shadow:: 5px 5px 4px #adadad;
