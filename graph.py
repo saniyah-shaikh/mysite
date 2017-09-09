@@ -17,10 +17,13 @@ def index():
     return render_template('index.html')
 
 @app.route("/forward/", methods=['POST'])
-def move_forward():
-    #Moving forward code
-    forward_message = "Moving Forward..."
-    return render_template('index.html', message=forward_message);
+def run_script():
+    rand = {}
+    for x in range(8):
+        num = random.choice(range(100))
+        rand.update({x:num})
+    # print (rand)
+    plot_emotions(rand, 'testing')
 
 def getColor(i):
     colors = ['green', 'purple', 'blue', 'red', 'orange', 'yellow', 'black', 'pink', 'gray']
@@ -46,9 +49,3 @@ def plot_emotions(dic, save):
     plt.savefig(save + '.png', bbox_inches='tight')
     plt.show()
     
-rand = {}
-for x in range(8):
-    num = random.choice(range(100))
-    rand.update({x:num})
-print (rand)
-plot_emotions(rand, 'testing')
