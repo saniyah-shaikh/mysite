@@ -51,3 +51,6 @@ def plot_emotions(dic, save):
     plt.savefig(save + '.png', bbox_inches='tight')
     plt.show()
     
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
+    app.debug = True
