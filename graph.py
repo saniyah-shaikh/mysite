@@ -25,7 +25,7 @@ def run_script(name=None):
         rand.update({x:num})
     # print (rand)
     plot_emotions(rand, 'testing')
-    return render_template('index.html', name=name)
+    return render_template('resume.html', name=name)
 
 def getColor(i):
     colors = ['green', 'purple', 'blue', 'red', 'orange', 'yellow', 'black', 'pink', 'gray']
