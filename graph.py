@@ -14,18 +14,18 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def index():
-    return render_template('index.html')
+def index(name=None):
+    return render_template('index.html', name=name)
 
 @app.route("/runscript")
-def run_script():
+def run_script(name=None):
     rand = {}
     for x in range(8):
         num = random.choice(range(100))
         rand.update({x:num})
     # print (rand)
     plot_emotions(rand, 'testing')
-    return render_template('index.html')
+    return render_template('index.html', name=name)
 
 def getColor(i):
     colors = ['green', 'purple', 'blue', 'red', 'orange', 'yellow', 'black', 'pink', 'gray']
