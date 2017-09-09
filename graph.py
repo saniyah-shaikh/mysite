@@ -10,13 +10,14 @@ import matplotlib.patches as patches
 import numpy as np
 
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 @app.route("/")
 def index():
     return render_template('index.html')
 
-@app.route("/forward/", methods=['POST'])
+@app.route("/runscript")
 def run_script():
     rand = {}
     for x in range(8):
@@ -24,6 +25,7 @@ def run_script():
         rand.update({x:num})
     # print (rand)
     plot_emotions(rand, 'testing')
+    return render_template('index.html')
 
 def getColor(i):
     colors = ['green', 'purple', 'blue', 'red', 'orange', 'yellow', 'black', 'pink', 'gray']
