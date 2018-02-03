@@ -918,38 +918,38 @@ fieldset[disabled] .btn-theme {
     [Left margin]
 ------------------------------------------------------------------*/
 .margin-l-0 {
-  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .margin-l-5 {
-  margin-right: 5px !important;
+  margin-left: 5px !important;
 }
 
 .margin-l-10 {
-  margin-right: 10px !important;
+  margin-left: 10px !important;
 }
 
 .margin-l-20 {
-  margin-right: 20px !important;
+  margin-left: 20px !important;
 }
 
 /*------------------------------------------------------------------
     [Right margin]
 ------------------------------------------------------------------*/
 .margin-r-0 {
-  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .margin-r-5 {
-  margin-left: 5px !important;
+  margin-right: 5px !important;
 }
 
 .margin-r-10 {
-  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 
 .margin-r-20 {
-  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 /*------------------------------------------------------------------
