@@ -1018,6 +1018,10 @@ fieldset[disabled] .btn-theme {
   margin-left: 20px !important;
 }
 
+.margin-l-40 {
+  margin-left: 40px !important;
+}
+
 /*------------------------------------------------------------------
     [Right margin]
 ------------------------------------------------------------------*/
