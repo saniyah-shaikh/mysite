@@ -108,7 +108,7 @@
           cursor: pointer;
         }
 
-        .mySlides {
+        .robotics {
           display: none;
         }
 
@@ -268,43 +268,43 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                                 <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <img src="img/slider-robo/adambots.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                                    <img src="img/sliders/robo/adambots.jpg" style="width:100%" onclick="openModal('robotics', 'slider-robo');currentSlide('robotics', 1)" class="hover-shadow cursor">
                                 </div>
-                                    <div id="myModal" class="modal">
-                                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    <div id="slider-robo" class="modal">
+                                        <span class="close cursor" onclick="closeModal('slider-robo')">&times;</span>
                                             <div class="modal-content">
-                                                <div class="mySlides">
+                                                <div class="robotics">
                                                     <div class="numbertext">1 / 3</div>
-                                                    <img src="img/slider-robo/adambots.jpg" style="width:100%">
+                                                    <img src="img/sliders/robo/adambots.jpg" style="width:100%">
                                                 </div>
-                                                <div class="mySlides">
+                                                <div class="robotics">
                                                   <div class="numbertext">2 / 3</div>
-                                                  <img src="img/slider-robo/banquet.jpg" style="width:100%">
+                                                  <img src="img/sliders/robo/banquet.jpg" style="width:100%">
                                                 </div>
-                                                <div class="mySlides">
+                                                <div class="robotics">
                                                   <div class="numbertext">3 / 3</div>
-                                                  <img src="img/slider-robo/team-pic.jpg" style="width:100%">
+                                                  <img src="img/sliders/robo/team-pic.jpg" style="width:100%">
                                                 </div>
-                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                <a class="prev" onclick="plusSlides('robotics', -1)">&#10094;</a>
+                                                <a class="next" onclick="plusSlides('robotics', 1)">&#10095;</a>
                                                 <div class="caption-container">
                                                     <p id="caption"></p>
                                                 </div>
                                                 <div class="column">
-                                                  <img class="demo cursor" src="img/slider-robo/adambots.jpg" style="width:100%" onclick="currentSlide(1)" alt="Meeting Grant Imahara at FIRST World Championships, April 2016">
+                                                  <img class="demo cursor" src="img/sliders/robo/adambots.jpg" style="width:100%" onclick="currentSlide('robotics', 1)" alt="Meeting Grant Imahara at FIRST World Championships, April 2016">
                                                 </div>
                                                 <div class="column">
-                                                  <img class="demo cursor" src="img/slider-robo/banquet.jpg" style="width:100%" onclick="currentSlide(2)" alt="Seniors receive varsity letters at the 2016 FIRST End-of-Season Banquet.">
+                                                  <img class="demo cursor" src="img/sliders/robo/banquet.jpg" style="width:100%" onclick="currentSlide('robotics', 2)" alt="Seniors receive varsity letters at the 2016 FIRST End-of-Season Banquet.">
                                                 </div>
                                                 <div class="column">
-                                                  <img class="demo cursor" src="img/slider-robo/team-pic.jpg" style="width:100%" onclick="currentSlide(3)" alt="2016 AdamBots Team Picture">
+                                                  <img class="demo cursor" src="img/sliders/robo/team-pic.jpg" style="width:100%" onclick="currentSlide('robotics', 3)" alt="2016 AdamBots Team Picture">
                                                 </div>
                                 </div>
                             </div>
                         </div>           
                         <h4><a href="#">AdamBots Photos</a> <br/></h4>
                         <p>Pictures with my high school robotics team. </p>
-                        <a class="link" href="#" onclick="openModal();currentSlide(1)" style="float: right">View Gallery</a>
+                        <a class="link" href="#" onclick="openModal('robotics', slider-robo');currentSlide('robotics', 1)" style="float: right">View Gallery</a>
                     </div>
                     <!-- End Photo Gallery -->
 
@@ -314,28 +314,30 @@
         </div>
         <!-- End Photo Gallery -->
         <script>
-        function openModal() {
-          document.getElementById('myModal').style.display = "block";
+        function openModal(slideName, modal) {
+          document.getElementById(modal).style.display = "block";
+          slideIndex = 1;
+          showSlides(slideName, slideIndex);
         }
 
-        function closeModal() {
-          document.getElementById('myModal').style.display = "none";
+        function closeModal(modal) {
+          document.getElementById(modal).style.display = "none";
         }
 
         var slideIndex = 1;
-        showSlides(slideIndex);
+        
 
-        function plusSlides(n) { 
-          showSlides(slideIndex += n);
+        function plusSlides(slideName, n) { 
+          showSlides(slideName, slideIndex += n);
         }
 
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
+        function currentSlide(slideName, n) {
+          showSlides(slideName, slideIndex = n);
         }
 
-        function showSlides(n) {
+        function showSlides(slideName, n) {
           var i;
-          var slides = document.getElementsByClassName("mySlides");
+          var slides = document.getElementsByClassName(slideName);
           var dots = document.getElementsByClassName("demo");
           var captionText = document.getElementById("caption");
           if (n > slides.length) {slideIndex = 1}
