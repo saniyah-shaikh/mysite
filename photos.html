@@ -92,16 +92,18 @@
 
         /* The Close Button */
         .close {
-          color: red;
+          color: white;
           position: absolute;
-          top: 10px;
-          font-size: 35px;
+          top: 12%;
+          right: 25px;
+          border-radius: 0 3px 3px 0;
+          font-size: 70px;
           font-weight: bold;
         }
 
         .close:hover,
         .close:focus {
-          color: #999;
+          color: red;
           text-decoration: none;
           cursor: pointer;
         }
@@ -264,57 +266,46 @@
                     <!-- Latest Projects -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <div class="column">
                                 <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
                                     <img src="img/philly.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                                 </div>
-                            </div>
-                                        <div id="myModal" class="modal">
-                                          
-                                          <div class="modal-content">
-
-                                            <div class="mySlides">
-                                              <div class="numbertext">1 / 4</div>
-                                              <img src="img/philly.JPG" style="width:100%">
-                                            </div>
-
-                                            <div class="mySlides">
-                                              <div class="numbertext">2 / 4</div>
-                                              <img src="img/slider-robo/adambots.jpg" style="width:100%">
-                                            </div>
-
-                                            <div class="mySlides">
-                                              <div class="numbertext">3 / 4</div>
-                                              <img src="img/slider-robo/banquet.jpg" style="width:100%">
-                                            </div>
-                                            
-                                            <div class="mySlides">
-                                              <div class="numbertext">4 / 4</div>
-                                              <img src="img/slider-robo/team-pic.jpg" style="width:100%">
-                                            </div>
-                                            
-                                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                            <div class="caption-container">
-                                              <p id="caption"></p>
-                                            </div>
-
-
-                                            <div class="column">
-                                              <img class="demo cursor" src="img/philly.JPG" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-                                            </div>
-                                            <div class="column">
-                                              <img class="demo cursor" src="img/slider-robo/adambots.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-                                            </div>
-                                            <div class="column">
-                                              <img class="demo cursor" src="img/slider-robo/banquet.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                                            </div>
-                                            <div class="column">
-                                              <img class="demo cursor" src="img/slider-robo/team-pic.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                                            </div>
-                                            <span class="close cursor" onclick="closeModal()">CLOSE</span>
-                                          </div>
+                                    <div id="myModal" class="modal">
+                                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                                            <div class="modal-content">
+                                                <div class="mySlides">
+                                                    <div class="numbertext">1 / 4</div>
+                                                    <img src="img/philly.JPG" style="width:100%">
+                                                </div>
+                                                <div class="mySlides">
+                                                    <div class="numbertext">2 / 4</div>
+                                                    <img src="img/slider-robo/adambots.jpg" style="width:100%">
+                                                </div>
+                                                <div class="mySlides">
+                                                  <div class="numbertext">3 / 4</div>
+                                                  <img src="img/slider-robo/banquet.jpg" style="width:100%">
+                                                </div>
+                                                <div class="mySlides">
+                                                  <div class="numbertext">4 / 4</div>
+                                                  <img src="img/slider-robo/team-pic.jpg" style="width:100%">
+                                                </div>
+                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                <div class="caption-container">
+                                                    <p id="caption"></p>
+                                                </div>
+                                                <div class="column">
+                                                  <img class="demo cursor" src="img/philly.JPG" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="demo cursor" src="img/slider-robo/adambots.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="demo cursor" src="img/slider-robo/banquet.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="demo cursor" src="img/slider-robo/team-pic.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                                </div>
+                                </div>
                             </div>
                         </div>           
                         <h4><a href="#">When2Meet Mobile</a> <br/> <span class="text-uppercase margin-l-20">Android &amp; Java; CIS 350</span> <br/> <span class="text-uppercase margin-l-40">in progress, started Jan 2018</span></h4>
