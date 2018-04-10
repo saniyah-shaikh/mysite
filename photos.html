@@ -168,7 +168,6 @@
           background-color: black;
           padding: 8px 16px;
           font-size: 12px;
-          font-weight: 900;
           color: white;
         }
 
@@ -269,34 +268,34 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                                 <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <img src="img/sliders/robo/adambots.jpg" style="width:100%" onclick="openModal('robotics', 'slider-robo');currentSlide('robotics', 1)" class="hover-shadow cursor">
+                                    <img src="img/sliders/robo/adambots.jpg" style="width:100%" onclick="openModal('robotics', 'imgs-robo', 'caption-robo', 'slider-robo');currentSlide(1)" class="hover-shadow cursor">
                                 </div>
                                     <div id="slider-robo" class="modal">
                                         <span class="close cursor" onclick="closeModal('slider-robo')">&times;</span>
                                             <div class="modal-content">
                                                 <div class="robotics">
                                                     <div class="numbertext">1 / 3</div>
-                                                    <img class="demo" src="img/sliders/robo/adambots.jpg" style="width:100%" alt="Meeting Grant Imahara at FIRST World Championships, April 2016">
+                                                    <img class="imgs-robo" src="img/sliders/robo/adambots.jpg" style="width:100%" alt="Meeting Grant Imahara at FIRST World Championships, April 2016">
                                                 </div>
                                                 <div class="robotics">
                                                   <div class="numbertext">2 / 3</div>
-                                                  <img class="demo" src="img/sliders/robo/banquet.jpg" style="width:100%" alt="Seniors receive varsity letters at the 2016 FIRST End-of-Season Banquet.">
+                                                  <img class="imgs-robo" src="img/sliders/robo/banquet.jpg" style="width:100%" alt="Seniors receive varsity letters &amp; honor cords at the 2016 FIRST End-of-Season Banquet.">
                                                 </div>
                                                 <div class="robotics">
                                                   <div class="numbertext">3 / 3</div>
-                                                  <img class="demo" src="img/sliders/robo/team-pic.jpg" style="width:100%" alt="2016 AdamBots Team Picture">
+                                                  <img class="imgs-robo" src="img/sliders/robo/team-pic.jpg" style="width:100%" alt="2016 AdamBots Team Picture">
                                                 </div>
-                                                <a class="prev" onclick="plusSlides('robotics', -1)">&#10094;</a>
-                                                <a class="next" onclick="plusSlides('robotics', 1)">&#10095;</a>
+                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                                 <div class="caption-container">
-                                                    <p id="caption"></p>
+                                                    <p id="caption-robo"></p>
                                                 </div>
                                 </div>
                             </div>
                         </div>           
-                        <h4><a href="#">AdamBots Photos</a> <br/></h4>
+                        <h4 style="text-align: center;">AdamBots Photos</h4>
                         <p>Pictures with my high school robotics team. </p>
-                        <a class="link" href="#" onclick="openModal('robotics', 'slider-robo');currentSlide('robotics', 1)" style="float: right">View Gallery</a>
+                        <a class="link" href="#" onclick="openModal('robotics', 'imgs-robo', 'caption-robo', 'slider-robo');currentSlide(1)" style="float: right">View Gallery</a>
                     </div>
                     <!-- End Photo Gallery -->
 
@@ -304,34 +303,34 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                                 <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <img src="img/sliders/china/1.JPG" style="width:100%" onclick="openModal('china', 'slider-china');currentSlide('china', 1)" class="hover-shadow cursor">
+                                    <img src="img/sliders/china/1.JPG" style="width:100%" onclick="openModal('china', 'imgs-china', 'caption-china', 'slider-china');currentSlide(1)" class="hover-shadow cursor">
                                 </div>
                                     <div id="slider-china" class="modal">
                                         <span class="close cursor" onclick="closeModal('slider-china')">&times;</span>
                                             <div class="modal-content">
                                                 <div class="china">
                                                     <div class="numbertext">1 / 3</div>
-                                                    <img src="img/sliders/china/1.JPG" style="width:100%">
+                                                    <img class="imgs-china" src="img/sliders/china/1.JPG" style="width:100%" alt="Touring a green building in Beijing. PC: Bill He">
                                                 </div>
                                                 <div class="china">
                                                   <div class="numbertext">2 / 3</div>
-                                                  <img src="img/sliders/china/2.JPG" style="width:100%">
+                                                  <img class="imgs-china" src="img/sliders/china/2.JPG" style="width:100%" alt="Group picture after visiting a rail system research center">
                                                 </div>
                                                 <div class="china">
                                                   <div class="numbertext">3 / 3</div>
-                                                  <img src="img/sliders/china/3.JPG" style="width:100%">
+                                                  <img class="imgs-china" src="img/sliders/china/3.JPG" style="width:100%" alt="Group photo with the Shanghai CCTV tower in the background. PC: Bill He">
                                                 </div>
-                                                <a class="prev" onclick="plusSlides('china', -1)">&#10094;</a>
-                                                <a class="next" onclick="plusSlides('china', 1)">&#10095;</a>
+                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                                 <div class="caption-container">
-                                                    <p id="caption"></p>
+                                                    <p id="caption-china"></p>
                                                 </div>
                                 </div>
                             </div>
                         </div>           
-                        <h4><a href="#">China Trip Photos</a> <br/></h4>
+                        <h4 style="text-align: center;">China Trip Photos</h4>
                         <p>Pictures from March 2018 Penn Global Seminar trip to Beijing and Shanghai.</p>
-                        <a class="link" href="#" onclick="openModal('china', 'slider-china');currentSlide('china', 1)" style="float: right">View Gallery</a>
+                        <a class="link" href="#" onclick="openModal('china', 'imgs-china', 'caption-china', 'slider-china');currentSlide(1)" style="float: right">View Gallery</a>
                     </div>
                     <!-- End Photo Gallery -->
 
@@ -341,10 +340,13 @@
         </div>
         <!-- End Photo Gallery -->
         <script>
-        function openModal(slideName, modal) {
+        function openModal(name, images, caption, modal) {
           document.getElementById(modal).style.display = "block";
           slideIndex = 1;
-          showSlides(slideName, slideIndex);
+          slideName = name;
+          slideImages = images;
+          slideCaption = caption;
+          showSlides(slideIndex);
         }
 
         function closeModal(modal) {
@@ -352,21 +354,24 @@
         }
 
         var slideIndex = 1;
+        var slideImages = "imgs-robo";
+        var slideCaption = "caption-robo";
+        var slideName = 'robotics';
         
 
-        function plusSlides(slideName, n) { 
-          showSlides(slideName, slideIndex += n);
+        function plusSlides(n) { 
+          showSlides(slideIndex += n);
         }
 
-        function currentSlide(slideName, n) {
-          showSlides(slideName, slideIndex = n);
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
         }
 
-        function showSlides(slideName, n) {
+        function showSlides(n) {
           var i;
           var slides = document.getElementsByClassName(slideName);
-          var dots = document.getElementsByClassName("demo");
-          var captionText = document.getElementById("caption");
+          var dots = document.getElementsByClassName(slideImages);
+          var captionText = document.getElementById(slideCaption);
           if (n > slides.length) {slideIndex = 1}
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
