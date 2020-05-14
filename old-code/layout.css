@@ -1,0 +1,134 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+body {
+	padding: 20px 50px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 600;
+	color: #0000ff;
+	border-bottom: solid;
+}
+
+h2{
+	font-size: 25px;
+	font-weight: 500;
+	color: #1ac6ff;
+}
+
+h3{
+	font-size: 20px;
+	font-weight: 400;
+	color: #9900e6;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#my_pic {
+	margin: 0 auto;
+	padding: 1em;
+	filter: grayscale(100%);
+}
+
+#my_pic:hover {
+	filter: grayscale(0%);
+}
+
+#reg_pic {
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.highlight {
+	background-color: #ffcc99;
+}
+
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid blue;
+	border-radius: 3px;
+	min-height: 100px;
+	margin-bottom: 1rem;
+}
+
+.Button {
+	width: 200px;
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 150%;
+	background: #0000ff;
+	color: #fff;
+	border: 1px solid #0000ff;
+	border-radius: 10px;
+	-moz-box-shadow:: 6px 6px 5px #999;
+	-webkit-box-shadow:: 6px 6px 5px #999;
+	box-shadow:: 6px 6px 5px #999;
+}
+
+.Button:hover {
+	color: #0000ff;
+	background: black;
+	border: 1px solid #fff;
+	-moz-box-shadow:: 5px 5px 4px #adadad;
+	-webkit-box-shadow:: 5px 5px 4px #adadad;
+	box-shadow:: 5px 5px 4px #adadad;
+}
+
+.smallButton {
+	width: 175px;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 150%;
+	background: #0000ff;
+	color: #fff;
+	border: 1px solid #3366cc;
+	border-radius: 10px;
+	-moz-box-shadow:: 6px 6px 5px #999;
+	-webkit-box-shadow:: 6px 6px 5px #999;
+	box-shadow:: 6px 6px 5px #999;
+}
+
+.smallButton:hover {
+	color: #0000ff;
+	background: black;
+	border: 1px solid #fff;
+	-moz-box-shadow:: 5px 5px 4px #adadad;
+	-webkit-box-shadow:: 5px 5px 4px #adadad;
+	box-shadow:: 5px 5px 4px #adadad;
+}
+
+.mediumButton {
+	width: 250px;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 150%;
+	background: #0000ff;
+	color: #fff;
+	border: 1px solid #3366cc;
+	border-radius: 10px;
+	-moz-box-shadow:: 6px 6px 5px #999;
+	-webkit-box-shadow:: 6px 6px 5px #999;
+	box-shadow:: 6px 6px 5px #999;
+}
+
+.mediumButton:hover {
+	color: #0000ff;
+	background: black;
+	border: 1px solid #fff;
+	-moz-box-shadow:: 5px 5px 4px #adadad;
+	-webkit-box-shadow:: 5px 5px 4px #adadad;
+	box-shadow:: 5px 5px 4px #adadad;
+}
+
